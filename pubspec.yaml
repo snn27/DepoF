@@ -1,0 +1,56 @@
+name: depof
+description: A warehouse management application.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  
+  # Supabase
+  supabase_flutter: ^1.10.25
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Navigation
+  go_router: ^12.1.1
+  
+  # UI Components
+  flutter_form_builder: ^9.1.1
+  form_builder_validators: ^9.1.0
+  fl_chart: ^0.64.0
+  intl: ^0.18.1
+  
+  # Utils
+  uuid: ^3.0.7
+  logger: ^2.0.2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.6
+  riverpod_generator: ^2.3.9
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700 
